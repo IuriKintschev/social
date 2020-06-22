@@ -4,11 +4,18 @@ import 'package:social/app/app_controller.dart';
 import 'package:social/app/app_widget.dart';
 import 'package:social/app/modules/home/home_module.dart';
 import 'package:social/app/modules/splash/splash_page.dart';
+import 'package:social/core/interfaces/shared_repositore_interface.dart';
+import 'package:social/core/repositories/shared_repository.dart';
 
 class AppModule extends MainModule {
   @override
   List<Bind> get binds => [
-        Bind((i) => AppController()),
+        Bind<ISharedRepositoryInterface>(
+          (i) => SharedRepository(),
+        ),
+        Bind(
+          (i) => AppController(),
+        ),
       ];
 
   @override

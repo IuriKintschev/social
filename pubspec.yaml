@@ -26,6 +26,9 @@ dependencies:
   flutter_modular: ^1.2.5+1
   flutter_localizations:
     sdk: flutter
+  mobx: ^1.2.1+1
+  flutter_mobx: ^1.1.0+1
+  shared_preferences: ^0.5.7+3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -35,6 +38,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mobx_codegen: ^1.1.0+1
+  build_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
